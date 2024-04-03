@@ -1,0 +1,28 @@
+<fop version="1.0">
+	<strict-validation>false</strict-validation>
+
+	<source-resolution>72</source-resolution>
+	<target-resolution>72</target-resolution>
+	<renderers>
+		<renderer mime="application/pdf">
+			<fonts>
+				<font kerning="yes" embed-url="classpath:///fonts/Yarndings20Charted-Regular.ttf" embedding-mode="subset">
+					<font-triplet name="Yarndings 20 Charted" style="normal" weight="normal"/>
+				</font>
+
+				<font kerning="yes" embed-url="classpath:///fonts/Poppins-Light.ttf" embedding-mode="subset">
+					<font-triplet name="Poppins Light" style="normal" weight="normal"/>
+				</font>
+
+				<font kerning="yes" embed-url="classpath:///fonts/Poppins-LightItalic.ttf" embedding-mode="subset">
+					<font-triplet name="Poppins Light" style="italic" weight="normal"/>
+				</font>
+
+				<font kerning="yes" embed-url="classpath:///fonts/Poppins-Medium.ttf" embedding-mode="subset">
+					<font-triplet name="Poppins Medium" style="normal" weight="normal"/>
+				</font>
+
+			</fonts>
+		</renderer>
+	</renderers>
+</fop>

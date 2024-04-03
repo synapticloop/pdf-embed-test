@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+group = 'com.synapticloop'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClass = 'Main'
+}
+
+
+dependencies {
+    implementation('org.apache.xmlgraphics:fop:2.9') {
+        exclude group:'org.apache.xmlgraphics', module: 'xmlgraphics-commons'
+    }
+    implementation 'org.apache.xmlgraphics:xmlgraphics-commons:2.9'
+}
+
